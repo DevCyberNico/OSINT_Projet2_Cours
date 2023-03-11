@@ -26,8 +26,8 @@ def menu():
         if choice == "0":
             break
         elif choice == "1":
-            target = input("Enter the target domain: ")
-            dnsscan.run(target)
+            domaine = input("Enter the target domain: ")
+            dnsScan(domaine)
         elif choice == "2":
             ip = input("Enter the Shodan query: ")
             cle_api = input("Enter your Shodan API key: ")

@@ -1,14 +1,17 @@
 import argparse
 import socket
+from pprint import pprint
 
-def dnsScan(target):
-    try:
-        ip = socket.gethostbyname(target)
-        print("IP address for {} is {}".format(target, ip))
-    except socket.gaierror as e:
-        print("Error resolving {}: {}".format(target, e))
+import requests
 
 
+def dnsScan(dns):
+
+    pprint(requests.get(f"https://networkcalc.com/api/dns/lookup/{dns}").json())
+    
+    
+    
+   
 
 
 
