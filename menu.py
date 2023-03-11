@@ -1,8 +1,8 @@
-import dnsscan
+"""import dnsscan
 import shodan
 import theharvester
 import urlscan
-
+"""
 def menu():
     while True:
         print("Choose an OSINT tool to use:")
