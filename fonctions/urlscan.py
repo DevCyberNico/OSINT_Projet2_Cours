@@ -1,4 +1,5 @@
-
+import json
+import requests
 
 def urlScan(adresse, cle ):
     headers = {'API-Key': cle, 'Content-Type': 'application/json'}
