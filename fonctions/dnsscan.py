@@ -8,3 +8,15 @@ def dnsScan(target):
     except socket.gaierror as e:
         print("Error resolving {}: {}".format(target, e))
 
+
+
+
+
+
+
+
+
+
+
+
+
