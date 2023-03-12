@@ -3,15 +3,6 @@ from fonctions.dnsscan import dnsScan
 from fonctions.shodan import uShodan
 from fonctions.theHarvester import run_theharvester
 
-import os
-import sys
-import shodan
-import theHarvester
-import requests
-import json
-
-
-
 
 
 def menu():
@@ -23,23 +14,23 @@ def menu():
         print("4. urlscan.io")
         print("0. Exit")
 
-        choice = input("Enter your choice: ")
+        choice = input("Entrez votre choix : ")
         if choice == "0":
             break
         elif choice == "1":
-            dns = input("Enter the target domain: ")
+            dns = input("Entrez le nom de domaine: ")
             dnsScan(dns)
         elif choice == "2":
-            ip = input("Enter the Shodan query: ")
+            ip = input("Entrez l'adresse ip : ")
             cle_api = input("Enter your Shodan API key: ")
             uShodan(ip, cle_api)
         elif choice == "3":
-            domain = input('Insérez le domaine cible : ')
-            navigator = input ('Avec quel navigateur ? ')
+            domain = input('Entrez le nom de domaine : ')
+            navigator = input('Avec quel navigateur ? ')
             output = run_theharvester(domain, navigator)
             filename = f'{domain}.txt'
-            with open(filename, 'w') as f:
-                f.write(output)
+            #with open(filename, 'w') as f:
+             #   f.write(output)
             print(f'Résultats enregsirés dans {filename}')
         elif choice == "4":
             adresse = input("Enter the target URL: ")
