@@ -1,6 +1,7 @@
 from fonctions.urlscan import urlScan
 from fonctions.dnsscan import dnsScan
 from fonctions.shodan import uShodan
+from fonctions.theHarvester import theHarvester
 
 import os
 import sys
@@ -33,9 +34,10 @@ def menu():
             cle_api = input("Enter your Shodan API key: ")
             uShodan(ip, cle_api)
         elif choice == "3":
-            query = input("Enter the search query: ")
-            target = input("Enter the target domain: ")
-            theHarvester.run(query, target)
+            nomDomaine = input("Entrez le nom de domine : ")
+            navigateur = input("Entrez le navigateur voulu : ")
+            nomFichier = input("Entrez le nom du fichier : ")
+            theHarvester(nomDomaine, navigateur, nomFichier)
         elif choice == "4":
             adresse = input("Enter the target URL: ")
             api_key = input("Enter your urlscan.io API key: ")
