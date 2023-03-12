@@ -6,16 +6,23 @@ from shodan import Shodan
 
 
 
-def shodan(ip, cle):
+def uShodan(ip, cle):
 
     api = Shodan(cle)                                                                                                   # entree cle api shodan
     resultat = api.host(ip)
-
     pprint(resultat)                                                                                                    # sortie de l'api après entree ip
 
     organisme = resultat['org']
-    print(f"L'organisme est : {organisme}")
+    domaine = resultat['domains']
 
+
+
+
+
+    print(f"L'organisme est : {organisme} \n"
+          f"Son domaine est : {domaine} \n"
+          f"")
+#cle publique type chiffrement
 
 
 

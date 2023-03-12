@@ -1,10 +1,10 @@
 from fonctions.urlscan import urlScan
 from fonctions.dnsscan import dnsScan
-from fonctions.shodan import shodan
+from fonctions.shodan import uShodan
 
 import os
 import sys
-#import shodan
+import shodan
 import theHarvester
 import requests
 import json
@@ -26,12 +26,12 @@ def menu():
         if choice == "0":
             break
         elif choice == "1":
-            domaine = input("Enter the target domain: ")
-            dnsScan(domaine)
+            dns = input("Enter the target domain: ")
+            dnsScan(dns)
         elif choice == "2":
             ip = input("Enter the Shodan query: ")
             cle_api = input("Enter your Shodan API key: ")
-            shodan(ip, cle_api)
+            uShodan(ip, cle_api)
         elif choice == "3":
             query = input("Enter the search query: ")
             target = input("Enter the target domain: ")
