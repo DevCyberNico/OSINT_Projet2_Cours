@@ -10,10 +10,9 @@ Avant d'utiliser ce script, vous devez avoir Python 3 installé sur votre ordina
 </ul>
 
 <h2>Utilisation</h2>
-Pour exécuter le script, ouvrez une invite de commandes ou un terminal, naviguez jusqu'au répertoire contenant le fichier Python, puis exécutez la commande suivante :
-```
-python menu.py
-```  
+Pour exécuter le script, ouvrez une invite de commandes ou un terminal, naviguez jusqu'au répertoire contenant le fichier Python, puis exécutez la commande suivante :</br>
+```python menu.py```
+
 Le script affichera un menu interactif dans la console. Choisissez une option en entrant le numéro correspondant, puis suivez les instructions à l'écran pour saisir les informations requises. Les résultats seront affichés dans la console ou enregistrés dans un fichier.
 
 <h2>Fonctions</h2>
