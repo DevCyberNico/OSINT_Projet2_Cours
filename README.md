@@ -7,7 +7,7 @@ Avant d'utiliser ce script, vous devez avoir Python 3 installé sur votre ordina
 <li>Requests (pour le DNS Scan et urlscan.io)</li>
 <li>Shodan (pour Shodan)</li>
 <li>Selenium (pour TheHarvester)</li>
-<ul>
+</ul>
 
 <h2>Utilisation</h2>
 Pour exécuter le script, ouvrez une invite de commandes ou un terminal, naviguez jusqu'au répertoire contenant le fichier Python, puis exécutez la commande suivante :
