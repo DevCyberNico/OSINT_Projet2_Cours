@@ -1,15 +1,17 @@
 #   theharvester -d {nomDomaine} -l 200 -b {navigateur} -f {nomFichier}
 
-import os
-import platform
+import subprocess
 
+def run_theharvester(domain, navigator):
+    cmd = ['theHarvester', '-d', domain, '-l', '200', '-b', navigator]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    return result.stdout
 
-def theHarvester():
-    nomDomaine = input("Entrez le nom de domaine : \n ")
-    navigateur = input("Entrez le navigateur désiré : \n")
-    nomFichier = input("Entrez le nom du fichier : \n")
-
-    print(os.system(f"theHarvester -d {nomDomaine} -l 200 -b {navigateur} -f {nomFichier}"))
+if __name__ == '__main__':
+    domain = input('Enter the domain to search: ')
+    navigator = input ('Avec quel navigateur ? ')
+    output = run_theharvester(domain, navigator)
+    print(output)
 
 
 
