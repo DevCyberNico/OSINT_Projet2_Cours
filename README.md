@@ -11,10 +11,9 @@ Avant d'utiliser ce script, vous devez avoir Python 3 installé sur votre ordina
 
 <h2>Utilisation</h2>
 Pour exécuter le script, ouvrez une invite de commandes ou un terminal, naviguez jusqu'au répertoire contenant le fichier Python, puis exécutez la commande suivante :
-
-css
-Copy code
+```
 python menu.py
+```  
 Le script affichera un menu interactif dans la console. Choisissez une option en entrant le numéro correspondant, puis suivez les instructions à l'écran pour saisir les informations requises. Les résultats seront affichés dans la console ou enregistrés dans un fichier.
 
 <h2>Fonctions</h2>
@@ -33,4 +32,4 @@ Exécute TheHarvester sur un nom de domaine donné à l'aide de Selenium et d'un
 Effectue une analyse de sécurité d'une URL donnée à l'aide de l'API urlscan.io.
 
 <h2>Auteur</h2>
-Ce script a été écrit par [votre_nom]. N'hésitez pas à me contacter pour toute question ou suggestion.
+Ce script a été écrit par Nicolas FOESSEL, Thibaut GUESDON, Benjamin FRANCISCO. N'hésitez pas à me contacter pour toute question ou suggestion.
