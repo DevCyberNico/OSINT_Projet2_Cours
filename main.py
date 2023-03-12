@@ -33,8 +33,8 @@ def menu():
              #   f.write(output)
             print(f'Résultats enregsirés dans {filename}')
         elif choice == "4":
-            adresse = input("Enter the target URL: ")
-            api_key = input("Enter your urlscan.io API key: ")
+            adresse = input("Entrez une URL: ")
+            api_key = input("Entrez votre clé API 'urlscan.io' : ")
             urlScan(adresse, api_key)
         else:
             print("Invalid choice")

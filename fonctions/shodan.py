@@ -37,7 +37,7 @@ def uShodan(ip, cle):
           f"Son domaine est : {domaine} \n"
           f"ports ouverts : {ports} \n"
           f"Pays : {pays} \n"
-          f"Clé publique : {clePublique['bits']}, {clePublique['type']} \n")
+          f"Clé publique : nombre de bits :{clePublique['bits']}, type de clé : {clePublique['type']} \n")
 #cle publique type chiffrement
 
 
