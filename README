@@ -1,4 +1,4 @@
-`#`Menu d'outils d'OSINT`#`
+<h1>Menu d'outils d'OSINT</h1>
 Ce script Python est un menu interactif permettant à l'utilisateur de choisir des outils d'OSINT (Open Source Intelligence). Les outils disponibles sont le DNS Scan, Shodan, TheHarvester et urlscan.io.
 
 Prérequis
