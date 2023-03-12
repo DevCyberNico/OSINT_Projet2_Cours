@@ -1,12 +1,13 @@
 <h1>Menu d'outils d'OSINT</h1>
 Ce script Python est un menu interactif permettant à l'utilisateur de choisir des outils d'OSINT (Open Source Intelligence). Les outils disponibles sont le DNS Scan, Shodan, TheHarvester et urlscan.io.
 
-Prérequis
+<h2>Prérequis</h2>
 Avant d'utiliser ce script, vous devez avoir Python 3 installé sur votre ordinateur. Les bibliothèques externes suivantes doivent également être installées :
-
-Requests (pour le DNS Scan et urlscan.io)
-Shodan (pour Shodan)
-Selenium (pour TheHarvester)
+<ul>
+<li>Requests (pour le DNS Scan et urlscan.io)</li>
+<li>Shodan (pour Shodan)</li>
+<li>Selenium (pour TheHarvester)</li>
+<ul>
 Utilisation
 Pour exécuter le script, ouvrez une invite de commandes ou un terminal, naviguez jusqu'au répertoire contenant le fichier Python, puis exécutez la commande suivante :
 
